@@ -1,0 +1,67 @@
+﻿.listFrame {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid midnightblue;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.listItem:hover {
+  background: #ddddf0;
+}
+
+.listItemOrderSign {
+  height: 100%;
+  width: 20px;
+  text-align: center;
+}
+
+.listItemName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: 100%;
+  width: 80%;
+}
+
+.listItemName p {
+  margin: 0;
+  text-align: center;
+  word-break: break-all;
+}
+
+.listItemRemoveButton {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+
+  height: 100%;
+  width: 20px;
+  background: #ffa8a8;
+}
+
+.listItemRemoveButton:hover {
+  background: #ffc7c7;
+}
+
+.listItemRemoveButton:active {
+  background: #ffa8a8;
+}
+
+.listItemRemoveButton::-moz-focus-inner {
+  border: none;
+}

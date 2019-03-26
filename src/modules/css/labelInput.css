@@ -1,0 +1,60 @@
+﻿.textInput {
+  height: 16px;
+  width: 100%;  
+
+  padding: 0;
+  border: none;
+  border-top: 1px solid midnightblue;
+  border-bottom: 2px solid midnightblue;
+  
+  color: #0f0f45;
+  text-align: center;
+}
+
+.button {
+  padding: 0;
+  border: none;
+  font: inherit;
+
+  height: 24px;
+  width: 100%;
+
+  color: #0f0f45;
+  background: #c8c8e0; 
+}
+
+.button:hover {
+  border: none;
+  outline: none;
+  background: #ddddf0;
+}
+
+.button:active {
+  border: none;
+  outline: none;
+  background: #c8c8e0;
+}
+
+.button:focus {
+  border: none;
+  outline: none;
+}
+
+.button::-moz-focus-inner {
+  border: none;
+}
+
+.button p {
+  margin: 0;
+}
+
+.warning {
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+	height: 24px;
+	width: 100%;
+
+	text-align: center;
+	background: #fcd2d2;
+}
