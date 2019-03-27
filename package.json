@@ -3,24 +3,25 @@
   "version": "1.0.0",
   "description": "",
   "private": true,
+
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "bundle": "webpack --progress",
     "transp": "babel src --out-dir dist --presets react-app/prod",
     "server": "webpack-dev-server"
   },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
+
   "dependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-react-app": "^3.1.2",
     "css-loader": "^2.1.1",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "react-redux": "^6.0.1",
-    "redux": "^4.0.1"
+    "react-dom": "^16.8.4"
   },
+
   "devDependencies": {
     "@babel/core": "^7.4.0",
     "@babel/preset-env": "^7.4.1",
