@@ -113,11 +113,8 @@ function onPlacemarkSet(event) {
 function renderMainRoute(labels) {
 
 	mainRoutePlacemarksCollection.removeAll();
-
 	for(let i = 0; i < labels.length; i++) {
-
-		let coordinates = labels[i].placemark.geometry.getCoordinates();
-		setPlacemarkToMainRoute(map, labels[i].order, labels[i].name, coordinates);
+		mainRoutePlacemarksCollection.add(labels[i].placemark);
 	};
 
 	renderPolyline();
