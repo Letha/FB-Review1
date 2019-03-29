@@ -357,7 +357,8 @@ class LabelsList extends React.Component {
 		<form className={styleLabelFrame.container} onSubmit={this.onSubmit}>
 
 			<button type='submit' className={styleLabelInput.button}>Создать точку маршрута</button>
-			<input name='inputLabelName' className={styleLabelInput.textInput} type='text' placeholder='название точки'></input>
+			<input name='inputLabelName' className={styleLabelInput.textInput} type='text'
+				placeholder='название точки' maxlength='100'></input>
 		
 			<div className={styleLabelList.listFrame}>
 
