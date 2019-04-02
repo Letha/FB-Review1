@@ -2,7 +2,7 @@
 
   Демонстрационный сайт функционирует по ссылке: https://letha.github.io/FB-Review1/.
 
-  Применённый стек: npm, webpack, babel, react, yandex maps JS API.
+  Применённый стек: npm, webpack, babel, react, css через модули, yandex maps JS API.
   
   Файлы разделены по директориям:
   - 'dist' - файлы готового сайта;
