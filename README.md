@@ -1,8 +1,10 @@
 # FB-Review
 
   Демонстрационный сайт функционирует по ссылке: https://letha.github.io/FB-Review1/.
+  
   ----
   (Для FunBox: файл по первому этапу - "level1.pdf". Если общение продолжилось бы, готов заняться покрытием кода тестами и внедрением Redux.)
+  
   ----
   Применённый стек: npm, webpack, babel, react, css через модули, yandex maps JS API.
   
