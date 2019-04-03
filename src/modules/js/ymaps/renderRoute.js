@@ -10,7 +10,7 @@ export function renderMainRoute(labels) {
 	mainRoutePlacemarksCollection.removeAll();
 	for(let i = 0; i < labels.length; i++) {
 		mainRoutePlacemarksCollection.add(labels[i].placemark);
-	};
+	}
 
 	renderPolyline();
 }

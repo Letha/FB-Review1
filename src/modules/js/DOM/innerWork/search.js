@@ -16,12 +16,12 @@ export function closestElement(element, className) {
 		while(!searchedElement && currentElement !== document.body) {
 			searchedElement = (currentElement.className.indexOf(className) !== -1) && currentElement;
 			currentElement = currentElement.parentElement;
-		};
+		}
 
 		if(searchedElement) {
 			return searchedElement;
 		} else {
 			return null;
-		};
-	};
+		}
+	}
 }

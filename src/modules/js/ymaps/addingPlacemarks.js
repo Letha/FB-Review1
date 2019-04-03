@@ -15,7 +15,7 @@ export function setPlacemarkToMainRoute(localMap, order, name, coordinates) {
 
 		if(!coordinates) {
 			coordinates = localMap.getCenter();
-		};
+		}
 
 		let placemark = new ymaps.Placemark(coordinates,
 			{balloonContentHeader: name, balloonContent: 'поиск...'},

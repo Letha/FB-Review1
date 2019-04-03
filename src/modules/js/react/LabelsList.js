@@ -58,19 +58,19 @@ export default class LabelsList extends React.Component {
 
 			if(document.getElementsByClassName('inputWarning').length === 0) {
 				showInputWarning('waitingForMap');
-			};
+			}
 
 		} else if(labelName === '') {
 
 			if(document.getElementsByClassName('inputWarning').length === 0) {
 				showInputWarning('emptyInput');
-			};
+			}
 
 		} else if(this.state.labels.length >= 99) {
 	
 			if(document.getElementsByClassName('inputWarning').length === 0) {
 				showInputWarning('listOverflow');
-			};
+			}
 
 		} else {
 
@@ -87,7 +87,7 @@ export default class LabelsList extends React.Component {
 			});
 
 			renderPolyline();
-		};
+		}
 	}
 
 	onListItemMouseDown(event) {
@@ -100,8 +100,8 @@ export default class LabelsList extends React.Component {
 			if(choosenLabelElement) {
 				this.dragElement = choosenLabelElement;
 				document.addEventListener('mousemove', this.onListItemMouseMove);
-			};
-		};
+			}
+		}
 	}
 
 	onListItemMouseMove(event) {
@@ -132,7 +132,7 @@ export default class LabelsList extends React.Component {
 
 				  		state.labels.splice(choosenLabelOrder - 1, 1);
 				  		state.labels.splice( (overLabelOrder - 1 < 0 ? +0 : overLabelOrder-1) , 0, choosenLabelRecord);
-				  	};
+				  	}
 
 				  	state.labels.forEach((el, i) => {el.order = i + 1;});
  
@@ -141,8 +141,8 @@ export default class LabelsList extends React.Component {
 
 				renderMainRoute(this.state.labels);
 				this.updatePlacemarks();
-			}; 
-		};
+			}
+		}
 	}
 
 	onListItemDragEnd(event) {
@@ -172,7 +172,7 @@ export default class LabelsList extends React.Component {
 
 					let newOrder = --state.labels[i].order;
 					state.labels[i].placemark.properties.set('iconCaption', String(newOrder));
-				};
+				}
 
 				return state;
 			});
@@ -192,7 +192,7 @@ export default class LabelsList extends React.Component {
 
 			for(let i = 0; i < state.labels.length; i++) {
 				state.labels[i].placemark = mainRoutePlacemarksCollection.get(i);
-			};
+			}
 
 			return state;
 		});
@@ -217,7 +217,7 @@ export default class LabelsList extends React.Component {
 				
 			onMouseDown={this.onListItemMouseDown}
 			onRemoveButtonClick={this.onRemoveButtonClick} />;
-		};
+		}
 
 		return listOfItems;
 	}

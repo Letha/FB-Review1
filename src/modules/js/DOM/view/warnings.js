@@ -26,7 +26,7 @@ export function showInputWarning(type) {
 		div.textContent = 'Поле не заполнено';
 	} else if(type === 'listOverflow') {
 		div.textContent = 'Не более 99 меток';
-	};
+	}
 
 	div = document.body.appendChild(div);			
 
